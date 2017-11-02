@@ -1,11 +1,11 @@
 # Handle Oh Dear webhook in a Laravel application
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/ohdearapp/laravel-stripe-webhooks.svg?style=flat-square)](https://packagist.org/packages/ohdearapp/laravel-stripe-webhooks)
-[![Build Status](https://img.shields.io/travis/ohdearapp/laravel-stripe-webhooks/master.svg?style=flat-square)](https://travis-ci.org/ohdearapp/laravel-stripe-webhooks)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/ohdearapp/laravel-ohdear-webhooks.svg?style=flat-square)](https://packagist.org/packages/ohdearapp/laravel-ohdear-webhooks)
+[![Build Status](https://img.shields.io/travis/ohdearapp/laravel-ohdear-webhooks/master.svg?style=flat-square)](https://travis-ci.org/ohdearapp/laravel-ohdear-webhooks)
 [![StyleCI](https://styleci.io/repos/109316815/shield?branch=master)](https://styleci.io/repos/109316815)
 [![SensioLabsInsight](https://img.shields.io/sensiolabs/i/30a27173-07a3-4752-9239-ae050924f158.svg?style=flat-square)](https://insight.sensiolabs.com/projects/30a27173-07a3-4752-9239-ae050924f158)
-[![Quality Score](https://img.shields.io/scrutinizer/g/ohdearapp/laravel-stripe-webhooks.svg?style=flat-square)](https://scrutinizer-ci.com/g/ohdearapp/laravel-stripe-webhooks)
-[![Total Downloads](https://img.shields.io/packagist/dt/ohdearapp/laravel-stripe-webhooks.svg?style=flat-square)](https://packagist.org/packages/ohdearapp/laravel-stripe-webhooks)
+[![Quality Score](https://img.shields.io/scrutinizer/g/ohdearapp/laravel-ohdear-webhooks.svg?style=flat-square)](https://scrutinizer-ci.com/g/ohdearapp/laravel-ohdear-webhooks)
+[![Total Downloads](https://img.shields.io/packagist/dt/ohdearapp/laravel-ohdear-webhooks.svg?style=flat-square)](https://packagist.org/packages/ohdearapp/laravel-ohdear-webhooks)
 
 [Oh Dear](https://ohdearapp.com) can notify your application of events using webhooks. This package can help you handle those webhooks. Out of the box it will verify the Oh Dear signature of all incoming requests. You can easily define jobs or events that should be dispatched when specific events hit your app.
 
@@ -28,7 +28,7 @@ You must publish the config file with:
 php artisan vendor:publish --provider="OhDear\LaravelWebhooks\OhDearWebhooksServiceProvider" --tag="config"
 ```
 
-This is the contents of the config file that will be published at `config/stripe-webhooks.php`:
+This is the contents of the config file that will be published at `config/ohdear-webhooks.php`:
 
 ```php
 return [
@@ -41,7 +41,7 @@ return [
 
     /*
      * Here you can define the job that should be run when a certain webhook hits your .
-     * application. The key is name of stripe event type with the `.` replace by `.`
+     * application. The key is name of ohdear event type with the `.` replace by `.`
      *
      * You can find a list of Oh dear webhook type here:
      * https://ohdearapp.com/xxxxxx
@@ -125,8 +125,8 @@ After having created your job you must register it at the `jobs` array in the `o
 // config/ohdear-webhooks.php
 
 'jobs' => [
-    'uptimeCheckFailed' => \App\Jobs\StripeWebhooks\HandleFailedUptimeCheck::class,
-    'uptimeCheckRecovered' => \App\Jobs\StripeWebhooks\HandleRecoveredUptimeCheck::class,
+    'uptimeCheckFailed' => \App\Jobs\ohdearWebhooks\HandleFailedUptimeCheck::class,
+    'uptimeCheckRecovered' => \App\Jobs\ohdearWebhooks\HandleRecoveredUptimeCheck::class,
 ],
 ```
 
