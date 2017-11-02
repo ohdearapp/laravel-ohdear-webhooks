@@ -5,8 +5,8 @@ namespace OhDear\LaravelWebhooks\Tests;
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler;
 use Illuminate\Contracts\Debug\ExceptionHandler;
-use OhDear\LaravelWebhooks\OhDearWebhooksServiceProvider;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
+use OhDear\LaravelWebhooks\OhDearWebhooksServiceProvider;
 
 abstract class TestCase extends OrchestraTestCase
 {
