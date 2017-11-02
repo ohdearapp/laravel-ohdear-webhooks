@@ -59,7 +59,7 @@ class IntegrationTest extends TestCase
             return true;
         });
 
-        Bus::assertDispatched(DummyJob::class, function (DummyJob $job)  {
+        Bus::assertDispatched(DummyJob::class, function (DummyJob $job) {
             return $job->ohDearWebhookCall->type() === 'uptimeCheckFailed';
         });
     }
@@ -91,6 +91,7 @@ class IntegrationTest extends TestCase
             'site' => ['id' => 'site1'],
             'run' => ['id' => 'run1'],
         ];
+
         return $payload;
     }
 }

@@ -1,9 +1,9 @@
 <?php
 
 namespace OhDear\LaravelWebhooks\Exceptions;
-use Illuminate\Http\Request;
 
 use Exception;
+use Illuminate\Http\Request;
 
 class WebhookFailed extends Exception
 {
@@ -24,7 +24,7 @@ class WebhookFailed extends Exception
 
     public static function missingType(Request $request)
     {
-        return new static("The webhook call did not contain a type. Valid OhDear webhook calls should always contain a type.");
+        return new static('The webhook call did not contain a type. Valid OhDear webhook calls should always contain a type.');
     }
 
     public function render($request)
