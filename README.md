@@ -1,4 +1,4 @@
-# Handle Oh Dear webhook in a Laravel application
+# Handle Oh Dear webhooks in a Laravel application
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/ohdearapp/laravel-ohdear-webhooks.svg?style=flat-square)](https://packagist.org/packages/ohdearapp/laravel-ohdear-webhooks)
 [![Build Status](https://img.shields.io/travis/ohdearapp/laravel-ohdear-webhooks/master.svg?style=flat-square)](https://travis-ci.org/ohdearapp/laravel-ohdear-webhooks)
