@@ -1,6 +1,6 @@
 {
     "name": "ohdearapp/laravel-ohdear-webhooks",
-    "description": "Handle OhDear webhook calls in a Laravel app",
+    "description": "Handle Oh Dear webhook calls in a Laravel app",
     "keywords": [
         "ohdear",
         "uptime",
