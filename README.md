@@ -3,7 +3,7 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/ohdearapp/laravel-stripe-webhooks.svg?style=flat-square)](https://packagist.org/packages/ohdearapp/laravel-stripe-webhooks)
 [![Build Status](https://img.shields.io/travis/ohdearapp/laravel-stripe-webhooks/master.svg?style=flat-square)](https://travis-ci.org/ohdearapp/laravel-stripe-webhooks)
 [![StyleCI](https://styleci.io/repos/109316815/shield?branch=master)](https://styleci.io/repos/109316815)
-[![SensioLabsInsight](https://img.shields.io/sensiolabs/i/a027b103-772c-4dbc-a2a4-a6ccc07e127f.svg?style=flat-square)](https://insight.sensiolabs.com/projects/a027b103-772c-4dbc-a2a4-a6ccc07e127f)
+[![SensioLabsInsight](https://img.shields.io/sensiolabs/i/30a27173-07a3-4752-9239-ae050924f158.svg?style=flat-square)](https://insight.sensiolabs.com/projects/30a27173-07a3-4752-9239-ae050924f158)
 [![Quality Score](https://img.shields.io/scrutinizer/g/ohdearapp/laravel-stripe-webhooks.svg?style=flat-square)](https://scrutinizer-ci.com/g/ohdearapp/laravel-stripe-webhooks)
 [![Total Downloads](https://img.shields.io/packagist/dt/ohdearapp/laravel-stripe-webhooks.svg?style=flat-square)](https://packagist.org/packages/ohdearapp/laravel-stripe-webhooks)
 
