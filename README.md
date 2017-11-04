@@ -41,14 +41,15 @@ return [
 
     /*
      * Here you can define the job that should be run when a certain webhook hits your .
-     * application. The key is name of ohdear event type with the `.` replace by `.`
+     * application.
      *
-     * You can find a list of Oh dear webhook type here:
+     * You can find a list of Oh dear webhook types here:
      * https://ohdearapp.com/xxxxxx
      */
     'jobs' => [
-        // 'source_chargeable' => \App\Jobs\LaravelWebhooks\HandleChargeableSource::class,
-        // 'charge_failed' => \App\Jobs\LaravelWebhooks\HandleFailedCharge::class,
+        // 'uptimeCheckFailed' => \App\Jobs\LaravelWebhooks\HandleFailedUptimeCheck::class,
+        // 'uptimeCheckRecovered' => \App\Jobs\LaravelWebhooks\HandleRecoveredUptimeCheck::class,
+        // ...
     ],
 ];
 ```
@@ -96,7 +97,7 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use OhDear\LaravelWebhooks\OhDearWebhookCall;
 
-class HandleChargeableSource implements ShouldQueue
+class HandleFailedUptimeCheck implements ShouldQueue
 {
     use InteractsWithQueue, Queueable, SerializesModels;
     
