@@ -18,9 +18,11 @@ class OhDearWebhooksController extends Controller
     {
         $eventPayload = $request->input();
 
-        if (! $type = $eventPayload['type']) {
+        if (! isset($eventPayload['type'])) {
             throw WebhookFailed::missingType($request);
         }
+
+        $type = $eventPayload['type'];
 
         $ohDearWebhookCall = OhDearWebhookCall::createFromRequest($request);
 
