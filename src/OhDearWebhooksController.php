@@ -16,7 +16,7 @@ class OhDearWebhooksController extends Controller
 
     public function __invoke(Request $request)
     {
-        $eventPayload = $request->input();
+        $eventPayload = json_decode($request->getContent(), true);
 
         if (! isset($eventPayload['type'])) {
             throw WebhookFailed::missingType($request);
