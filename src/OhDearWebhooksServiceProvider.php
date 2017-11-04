@@ -19,7 +19,7 @@ class OhDearWebhooksServiceProvider extends ServiceProvider
         }
 
         Route::macro('ohDearWebhooks', function ($url) {
-            return Route::post($url, \OhDear\LaravelWebhooks\OhDearWebhooksController::class);
+            return Route::post($url, '\OhDear\LaravelWebhooks\OhDearWebhooksController');
         });
     }
 
