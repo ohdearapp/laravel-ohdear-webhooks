@@ -24,7 +24,7 @@ class OhDearWebhooksController extends Controller
 
         $type = $eventPayload['type'];
 
-        $ohDearWebhookCall = OhDearWebhookCall::createFromRequest($request);
+        $ohDearWebhookCall = new OhDearWebhookCall($eventPayload);
 
         event("ohdear-webhooks::{$type}", $ohDearWebhookCall);
 

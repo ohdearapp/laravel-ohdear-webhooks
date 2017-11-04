@@ -8,16 +8,6 @@ class OhDearWebhookCall
 {
     public $payload = [];
 
-    public static function createFromRequest(Request $request)
-    {
-        return new static($request->only([
-            'type',
-            'dateTime',
-            'run',
-            'site',
-        ]));
-    }
-
     public function __construct(array $payload)
     {
         $this->payload = $payload;
