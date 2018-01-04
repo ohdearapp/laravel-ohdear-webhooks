@@ -2,8 +2,6 @@
 
 namespace OhDear\LaravelWebhooks;
 
-use Illuminate\Http\Request;
-
 class OhDearWebhookCall
 {
     public $payload = [];
