@@ -32,6 +32,6 @@ class VerifySignature
 
         $computedSignature = hash_hmac('sha256', $payload, $secret);
 
-        return $signature === $computedSignature;
+        return hash_equals($signature, $computedSignature);
     }
 }
