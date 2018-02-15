@@ -4,7 +4,7 @@ return [
 
     /*
      * Oh dear will sign webhooks using a secret. You can find the secret used at the webhook
-     * configuration settings: https://ohdearapp.com/team-settings/notifications
+     * configuration settings: https://ohdearapp.com/team-settings/notifications#webhooks
      */
     'signing_secret' => env('OH_DEAR_SIGNING_SECRET'),
 
