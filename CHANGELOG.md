@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-ohdear-webhooks` will be documented in this file
 
+## 1.0.3 - 2018-02-15
+
+- fill in placeholders in config file
+
 ## 1.0.2 - 2018-02-08
 
 - add support for L5.6
