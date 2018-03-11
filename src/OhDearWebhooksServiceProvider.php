@@ -28,6 +28,6 @@ class OhDearWebhooksServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/ohdear-webhooks.php', 'skeleton');
+        $this->mergeConfigFrom(__DIR__.'/../config/ohdear-webhooks.php', 'ohdear-webhooks');
     }
 }
