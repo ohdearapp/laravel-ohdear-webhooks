@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-ohdear-webhooks` will be documented in this file
 
+## 1.0.4 - 2018-03-08
+
+- fix reading config values
+
 ## 1.0.3 - 2018-02-15
 
 - fill in placeholders in config file
