@@ -3,7 +3,6 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/ohdearapp/laravel-ohdear-webhooks.svg?style=flat-square)](https://packagist.org/packages/ohdearapp/laravel-ohdear-webhooks)
 [![Build Status](https://img.shields.io/travis/ohdearapp/laravel-ohdear-webhooks/master.svg?style=flat-square)](https://travis-ci.org/ohdearapp/laravel-ohdear-webhooks)
 [![StyleCI](https://styleci.io/repos/109316815/shield?branch=master)](https://styleci.io/repos/109316815)
-[![SensioLabsInsight](https://img.shields.io/sensiolabs/i/30a27173-07a3-4752-9239-ae050924f158.svg?style=flat-square)](https://insight.sensiolabs.com/projects/30a27173-07a3-4752-9239-ae050924f158)
 [![Quality Score](https://img.shields.io/scrutinizer/g/ohdearapp/laravel-ohdear-webhooks.svg?style=flat-square)](https://scrutinizer-ci.com/g/ohdearapp/laravel-ohdear-webhooks)
 [![Total Downloads](https://img.shields.io/packagist/dt/ohdearapp/laravel-ohdear-webhooks.svg?style=flat-square)](https://packagist.org/packages/ohdearapp/laravel-ohdear-webhooks)
 
