@@ -19,7 +19,7 @@ class WebhookFailed extends Exception
 
     public static function signingSecretNotSet()
     {
-        return new static('The OhDear webhook signing secret is not set. Make sure that the `ohdear-webhooks.signing_secret` config key is set to the value you found on the Stripe dashboard.');
+        return new static('The OhDear webhook signing secret is not set. Make sure that the `ohdear-webhooks.signing_secret` config key is set to the value you found on the OhDear dashboard.');
     }
 
     public static function missingType(Request $request)
