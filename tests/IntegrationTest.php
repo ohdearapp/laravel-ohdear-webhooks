@@ -9,7 +9,7 @@ use OhDear\LaravelWebhooks\OhDearWebhookCall;
 
 class IntegrationTest extends TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
 
