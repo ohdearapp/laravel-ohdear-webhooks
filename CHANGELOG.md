@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-ohdear-webhooks` will be documented in this file
 
+## 1.2.0 - 2019-09-04
+
+- add support for Laravel 6
+
 ## 1.1.0 - 2019-02-27
 
 - drop Laravel 5.7 and below
