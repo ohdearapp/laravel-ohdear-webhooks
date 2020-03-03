@@ -3,8 +3,8 @@
 namespace OhDear\LaravelWebhooks\Tests\Middlewares;
 
 use Illuminate\Support\Facades\Route;
-use OhDear\LaravelWebhooks\Tests\TestCase;
 use OhDear\LaravelWebhooks\Middlewares\VerifySignature;
+use OhDear\LaravelWebhooks\Tests\TestCase;
 
 class VerifySignatureTest extends TestCase
 {
