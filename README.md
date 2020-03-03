@@ -1,7 +1,7 @@
 # Handle Oh Dear! webhooks in a Laravel application
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/ohdearapp/laravel-ohdear-webhooks.svg?style=flat-square)](https://packagist.org/packages/ohdearapp/laravel-ohdear-webhooks)
-[![Build Status](https://img.shields.io/travis/ohdearapp/laravel-ohdear-webhooks/master.svg?style=flat-square)](https://travis-ci.org/ohdearapp/laravel-ohdear-webhooks)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/ohdearapp/laravel-ohdear-webhooks/run-tests?label=tests)
 [![StyleCI](https://styleci.io/repos/109316815/shield?branch=master)](https://styleci.io/repos/109316815)
 [![Quality Score](https://img.shields.io/scrutinizer/g/ohdearapp/laravel-ohdear-webhooks.svg?style=flat-square)](https://scrutinizer-ci.com/g/ohdearapp/laravel-ohdear-webhooks)
 [![Total Downloads](https://img.shields.io/packagist/dt/ohdearapp/laravel-ohdear-webhooks.svg?style=flat-square)](https://packagist.org/packages/ohdearapp/laravel-ohdear-webhooks)
