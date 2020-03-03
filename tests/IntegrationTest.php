@@ -25,7 +25,7 @@ class IntegrationTest extends TestCase
     /** @test */
     public function it_can_handle_a_valid_request()
     {
-        $this->disableExceptionHandling();
+        $this->withoutExceptionHandling();
 
         $payload = $this->getTestPayload();
 

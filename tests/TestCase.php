@@ -32,24 +32,6 @@ abstract class TestCase extends OrchestraTestCase
         ];
     }
 
-    protected function disableExceptionHandling()
-    {
-        $this->app->instance(ExceptionHandler::class, new class extends Handler {
-            public function __construct()
-            {
-            }
-
-            public function report(Exception $e)
-            {
-            }
-
-            public function render($request, Exception $exception)
-            {
-                throw $exception;
-            }
-        });
-    }
-
     protected function determineOhDearSignature(array $payload): string
     {
         $secret = config('ohdear-webhooks.signing_secret');
