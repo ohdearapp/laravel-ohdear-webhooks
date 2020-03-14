@@ -10,7 +10,7 @@
 
 This package will not handle what should be done after the webhook request has been validated and the right job or event is called.
 
-Before using this package we highly recommend reading [the entire documentation on webhooks over at Oh Dear](https://ohdear.app/docs/webhooks/introduction).
+Before using this package we highly recommend reading [the documentation on webhooks over at Oh Dear](https://ohdear.app/docs/integrations/webhooks/laravel-package).
 
 ## Documentation
 
