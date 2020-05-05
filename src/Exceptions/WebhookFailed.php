@@ -27,6 +27,11 @@ class WebhookFailed extends Exception
         return new static('The webhook call did not contain a type. Valid OhDear webhook calls should always contain a type.');
     }
 
+    public static function jobClassDoesNotExist($jobClass, $ohDearWebhookCall)
+    {
+        return new static('The '. $jobClass .' class does not exist.');
+    }
+
     public function render($request)
     {
         return response(['error' => $this->getMessage()], 400);
