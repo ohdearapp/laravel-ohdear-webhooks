@@ -29,7 +29,7 @@ class WebhookFailed extends Exception
 
     public static function jobClassDoesNotExist($jobClass, $ohDearWebhookCall)
     {
-        return new static('The '. $jobClass .' class does not exist.');
+        return new static('The '.$jobClass.' class does not exist.');
     }
 
     public function render($request)
