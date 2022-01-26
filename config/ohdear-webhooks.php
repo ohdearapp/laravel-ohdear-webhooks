@@ -16,8 +16,8 @@ return [
      * https://ohdear.app/docs/webhooks/events
      */
     'jobs' => [
-        // 'uptimeCheckFailed' => \App\Jobs\LaravelWebhooks\HandleFailedUptimeCheck::class,
-        // 'uptimeCheckRecovered' => \App\Jobs\LaravelWebhooks\HandleRecoveredUptimeCheck::class,
+        // 'uptimeCheckFailedNotification' => \App\Jobs\LaravelWebhooks\HandleFailedUptimeCheck::class,
+        // 'uptimeCheckRecoveredNotification' => \App\Jobs\LaravelWebhooks\HandleRecoveredUptimeCheck::class,
         // ...
     ],
 ];
