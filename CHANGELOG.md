@@ -2,6 +2,19 @@
 
 All notable changes to `laravel-ohdear-webhooks` will be documented in this file
 
+## 1.4.2 - 2022-03-14
+
+## What's Changed
+
+- Update config to match actual types by @eimantaaas in https://github.com/ohdearapp/laravel-ohdear-webhooks/pull/13
+- Support Laravel 9
+
+## New Contributors
+
+- @eimantaaas made their first contribution in https://github.com/ohdearapp/laravel-ohdear-webhooks/pull/13
+
+**Full Changelog**: https://github.com/ohdearapp/laravel-ohdear-webhooks/compare/1.4.1...1.4.2
+
 ## 1.4.1 - 2020-12-12
 
 - allow PHP 8
