@@ -2,6 +2,12 @@
 
 All notable changes to `laravel-ohdear-webhooks` will be documented in this file
 
+## 1.4.3 - 2023-02-15
+
+- support L10
+
+**Full Changelog**: https://github.com/ohdearapp/laravel-ohdear-webhooks/compare/1.4.2...1.4.3
+
 ## 1.4.2 - 2022-03-14
 
 ## What's Changed
