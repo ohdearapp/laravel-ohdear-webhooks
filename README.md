@@ -76,7 +76,7 @@ If the signature is not valid a `OhDear\OhDearWebhooks\WebhookFailed` exception 
 
 There are two ways this package enables you to handle webhook requests: you can opt to queue a job or listen to the events the package will fire.
 
-## Handling webhook requests using jobs
+### Handling webhook requests using jobs
 
 If you want to do something when a specific event type comes in you can define a job that does the work. Here's an example of such a job:
 
@@ -123,7 +123,7 @@ After having created your job you must register it at the `jobs` array in the `o
 ],
 ```
 
-## Handling webhook requests using events
+### Handling webhook requests using events
 
 Instead of queueing jobs to perform some work when a webhook request comes in, you can opt to listen to the events this package will fire. Whenever a valid request hits your app, the package will fire a `ohdear-webhooks::<name-of-the-event>` event.
 
@@ -167,7 +167,7 @@ We highly recommend that you make the event listener queueable, as this will min
 
 The above example is only one way to handle events in Laravel. To learn the other options, [read the Laravel documentation on handling events](https://laravel.com/docs/5.5/events).
 
-## Using the OhDearWebhookCall
+### Using the OhDearWebhookCall
 
 Like mentioned above your events or jobs will receive an instance of `OhDear\LaravelWebhooks\OhDearWebhookCall`.
 
