@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-ohdear-webhooks` will be documented in this file
 
+## 1.4.4 - 2024-12-08
+
+Support Laravel 11
+
 ## 1.4.3 - 2023-02-15
 
 - support L10
