@@ -48,7 +48,7 @@ class IntegrationTest extends TestCase
                 return false;
             }
 
-            if ($eventPayload->site()['id'] != 'site1') {
+            if ($eventPayload->monitor()['id'] != 'monitor1') {
                 return false;
             }
 
@@ -88,7 +88,7 @@ class IntegrationTest extends TestCase
         $payload = [
             'type' => 'uptimeCheckFailed',
             'dateTime' => '20160101120000',
-            'site' => ['id' => 'site1'],
+            'monitor' => ['id' => 'monitor1'],
             'run' => ['id' => 'run1'],
         ];
 

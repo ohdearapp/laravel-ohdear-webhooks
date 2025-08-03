@@ -180,7 +180,7 @@ Or you can opt to get more specific information:
 
 ```php
 $ohDearWebhookCall->type(); // returns the type of the webhook (eg: 'uptimeCheckFailed');
-$ohDearWebhookCall->site(); // returns an array with all the attribute of the site;
+$ohDearWebhookCall->monitor(); // returns an array with all the attribute of the monitor;
 $ohDearWebhookCall->run(); // returns an array with all the attribute of the run;
 $ohDearWebhookCall->dateTime(); // returns an string with a dateTime (Ymdhis) when Oh Dear generated this webhook call;
 ```
