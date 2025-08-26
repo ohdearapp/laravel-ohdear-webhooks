@@ -1,86 +1,69 @@
 <?php
 
-namespace OhDear\LaravelWebhooks\Tests\Middlewares;
-
 use Illuminate\Support\Facades\Route;
 use OhDear\LaravelWebhooks\Middlewares\VerifySignature;
-use OhDear\LaravelWebhooks\Tests\TestCase;
 
-class VerifySignatureTest extends TestCase
-{
-    public function setUp(): void
-    {
-        parent::setUp();
+beforeEach(function () {
+    Route::post('ohdear-webhooks', function () {
+        return 'ok';
+    })->middleware(VerifySignature::class);
+});
 
-        Route::post('ohdear-webhooks', function () {
-            return 'ok';
-        })->middleware(VerifySignature::class);
-    }
+test('it will succeed when the request has a valid signature', function () {
+    $payload = [
+        'event' => 'uptimeCheckFailed',
+    ];
 
-    /** @test */
-    public function it_will_succeed_when_the_request_has_a_valid_signature()
-    {
-        $payload = [
-            'event' => 'uptimeCheckFailed',
-        ];
+    $response = $this->postJson(
+        'ohdear-webhooks',
+        $payload,
+        ['OhDear-Signature' => $this->determineOhDearSignature($payload)]
+    );
 
-        $response = $this->postJson(
-            'ohdear-webhooks',
-            $payload,
-            ['OhDear-Signature' => $this->determineOhDearSignature($payload)]
-        );
+    $response
+        ->assertStatus(200)
+        ->assertSee('ok');
+});
 
-        $response
-            ->assertStatus(200)
-            ->assertSee('ok');
-    }
+test('it will fail when the signature header is not set', function () {
+    $payload = [
+        'event' => 'uptimeCheckFailed',
+    ];
 
-    /** @test */
-    public function it_will_fail_when_the_signature_header_is_not_set()
-    {
-        $payload = [
-            'event' => 'uptimeCheckFailed',
-        ];
+    $response = $this->postJson(
+        'ohdear-webhooks',
+        $payload
+    );
 
-        $response = $this->postJson(
-            'ohdear-webhooks',
-            $payload
-        );
+    $response
+        ->assertStatus(400)
+        ->assertJson([
+            'error' => 'The request did not contain a header named `OhDear-Signature`.',
+        ]);
+});
 
-        $response
-            ->assertStatus(400)
-            ->assertJson([
-                'error' => 'The request did not contain a header named `OhDear-Signature`.',
-            ]);
-    }
+test('it will fail when the signing secret is not set', function () {
+    config(['ohdear-webhooks.signing_secret' => '']);
 
-    /** @test */
-    public function it_will_fail_when_the_signing_secret_is_not_set()
-    {
-        config(['ohdear-webhooks.signing_secret' => '']);
+    $response = $this->postJson(
+        'ohdear-webhooks',
+        ['event' => 'uptimeCheckFailed'],
+        ['OhDear-Signature' => 'abc']
+    );
 
-        $response = $this->postJson(
-            'ohdear-webhooks',
-            ['event' => 'uptimeCheckFailed'],
-            ['OhDear-Signature' => 'abc']
-        );
+    $response
+        ->assertStatus(400)
+        ->assertSee('The OhDear webhook signing secret is not set');
+});
 
-        $response
-            ->assertStatus(400)
-            ->assertSee('The OhDear webhook signing secret is not set');
-    }
+test('it will fail when the signature is invalid', function () {
+    $response = $this->postJson(
+        'ohdear-webhooks',
+        ['event' => 'source.chargeable'],
+        ['OhDear-Signature' => 'abc']
+    );
 
-    /** @test */
-    public function it_will_fail_when_the_signature_is_invalid()
-    {
-        $response = $this->postJson(
-            'ohdear-webhooks',
-            ['event' => 'source.chargeable'],
-            ['OhDear-Signature' => 'abc']
-        );
-
-        $response
-            ->assertStatus(400)
-            ->assertSee('found in the header named `OhDear-Signature` is invalid');
-    }
-}
+    $response
+        ->assertStatus(400)
+        ->assertSee('found in the header named `OhDear-Signature` is invalid');
+});

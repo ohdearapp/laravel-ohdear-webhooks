@@ -21,9 +21,9 @@ class OhDearWebhookCall
         return $this->payload['dateTime'];
     }
 
-    public function site(): array
+    public function monitor(): array
     {
-        return $this->payload['site'];
+        return $this->payload['monitor'];
     }
 
     public function run(): array
