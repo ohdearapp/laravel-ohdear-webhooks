@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-ohdear-webhooks` will be documented in this file
 
+## 2.0.0 - 2025-08-26
+
+### What's Changed
+
+* v2 by @freekmurze in https://github.com/ohdearapp/laravel-ohdear-webhooks/pull/17
+
+**Full Changelog**: https://github.com/ohdearapp/laravel-ohdear-webhooks/compare/1.4.4...2.0.0
+
 ## 1.4.4 - 2024-12-08
 
 Support Laravel 11
