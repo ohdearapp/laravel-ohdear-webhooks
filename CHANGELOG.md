@@ -2,6 +2,18 @@
 
 All notable changes to `laravel-ohdear-webhooks` will be documented in this file
 
+## 2.0.1 - 2025-09-17
+
+### What's Changed
+
+* Update README.md to fix links for webhook documentation by @tgabi333 in https://github.com/ohdearapp/laravel-ohdear-webhooks/pull/18
+
+### New Contributors
+
+* @tgabi333 made their first contribution in https://github.com/ohdearapp/laravel-ohdear-webhooks/pull/18
+
+**Full Changelog**: https://github.com/ohdearapp/laravel-ohdear-webhooks/compare/2.0.0...2.0.1
+
 ## 2.0.0 - 2025-08-26
 
 ### What's Changed
