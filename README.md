@@ -37,7 +37,7 @@ return [
      * application.
      *
      * You can find a list of Oh dear webhook types here:
-     * <?php echo config('app.url'); ?>/docs/webhooks/events
+     * https://ohdear.app/docs/integrations/webhooks#webhook-events
      */
     'jobs' => [
         // 'uptimeCheckFailed' => \App\Jobs\LaravelWebhooks\HandleFailedUptimeCheck::class,
