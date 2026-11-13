@@ -2,6 +2,16 @@
 
 All notable changes to `laravel-ohdear-webhooks` will be documented in this file
 
+## 2.2.0 - 2026-11-13
+
+This release requires PHP 8.4+ and Laravel 13. Apps on PHP 8.2/8.3 or Laravel 12 can keep using 2.1.0. The package's behaviour is unchanged.
+
+### What's Changed
+
+* Require Pest 5, PHP 8.4 and Laravel 13, add PHPStan and Pint by @freekmurze in https://github.com/ohdearapp/laravel-ohdear-webhooks/pull/20
+
+**Full Changelog**: https://github.com/ohdearapp/laravel-ohdear-webhooks/compare/2.1.0...2.2.0
+
 ## 2.1.0 - 2026-07-27
 
 ### What's Changed
