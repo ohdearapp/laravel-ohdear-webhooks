@@ -5,6 +5,7 @@ namespace OhDear\LaravelWebhooks\Exceptions;
 use Exception;
 use Illuminate\Http\Request;
 
+/** @phpstan-consistent-constructor */
 class WebhookFailed extends Exception
 {
     public static function missingSignature()

@@ -2,6 +2,7 @@
 
 namespace OhDear\LaravelWebhooks\Tests;
 
+use Illuminate\Foundation\Application;
 use OhDear\LaravelWebhooks\OhDearWebhooksServiceProvider;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 
@@ -10,7 +11,7 @@ abstract class TestCase extends OrchestraTestCase
     /**
      * Set up the environment.
      *
-     * @param \Illuminate\Foundation\Application $app
+     * @param  Application  $app
      */
     protected function getEnvironmentSetUp($app)
     {
@@ -18,8 +19,7 @@ abstract class TestCase extends OrchestraTestCase
     }
 
     /**
-     * @param \Illuminate\Foundation\Application $app
-     *
+     * @param  Application  $app
      * @return array
      */
     protected function getPackageProviders($app)
