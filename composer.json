@@ -18,16 +18,17 @@
         }
     ],
     "require": {
-        "php": "^8.2",
-        "illuminate/http": "^12.0|^13.0",
-        "illuminate/routing": "^12.0|^13.0",
-        "illuminate/support": "^12.0|^13.0"
-
+        "php": "^8.4",
+        "illuminate/http": "^13.0",
+        "illuminate/routing": "^13.0",
+        "illuminate/support": "^13.0"
     },
     "require-dev": {
-        "pestphp/pest": "^3.0|^4.0",
-        "pestphp/pest-plugin-laravel": "^3.0|^4.0",
-        "orchestra/testbench": "^10.0|^11.0"
+        "larastan/larastan": "^3.0",
+        "laravel/pint": "^1.14",
+        "orchestra/testbench": "^11.0",
+        "pestphp/pest": "^5.0",
+        "pestphp/pest-plugin-laravel": "^5.0"
     },
     "autoload": {
         "psr-4": {
@@ -40,7 +41,9 @@
         }
     },
     "scripts": {
-        "test": "vendor/bin/phpunit"
+        "test": "vendor/bin/pest",
+        "format": "vendor/bin/pint",
+        "analyse": "vendor/bin/phpstan analyse"
     },
     "config": {
         "sort-packages": true,

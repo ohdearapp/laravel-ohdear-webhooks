@@ -6,7 +6,7 @@ use OhDear\LaravelWebhooks\OhDearWebhookCall;
 
 class DummyJob
 {
-    /** @var \OhDear\LaravelWebhooks\OhDearWebhookCall */
+    /** @var OhDearWebhookCall */
     public $ohDearWebhookCall;
 
     public function __construct(OhDearWebhookCall $ohDearWebhookCall)
@@ -14,7 +14,5 @@ class DummyJob
         $this->ohDearWebhookCall = $ohDearWebhookCall;
     }
 
-    public function handle()
-    {
-    }
+    public function handle() {}
 }

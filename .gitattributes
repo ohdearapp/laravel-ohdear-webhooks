@@ -9,3 +9,5 @@
 /.scrutinizer.yml   export-ignore
 /tests              export-ignore
 /.editorconfig      export-ignore
+/.github            export-ignore
+/phpstan.neon.dist  export-ignore

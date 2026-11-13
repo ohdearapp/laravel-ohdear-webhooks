@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-ohdear-webhooks` will be documented in this file
 
+## 2.1.0 - 2026-07-27
+
+### What's Changed
+
+* Support Laravel 13 and PHP 8.5 by @tgabi333 in https://github.com/ohdearapp/laravel-ohdear-webhooks/pull/19
+
+**Full Changelog**: https://github.com/ohdearapp/laravel-ohdear-webhooks/compare/2.0.1...2.1.0
+
 ## 2.0.1 - 2025-09-17
 
 ### What's Changed

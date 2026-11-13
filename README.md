@@ -185,6 +185,12 @@ $ohDearWebhookCall->run(); // returns an array with all the attribute of the run
 $ohDearWebhookCall->dateTime(); // returns an string with a dateTime (Ymdhis) when Oh Dear generated this webhook call;
 ```
 
+## Testing
+
+```bash
+composer test
+```
+
 ## Contributing
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
